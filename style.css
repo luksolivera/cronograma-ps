@@ -1,0 +1,152 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+    background-color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #767575;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header h4 {
+    color: #4a4a4a;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+  }
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 80%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #4a4a4a;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4a4a4a;
+  }
+
+.timeline-item-content {
+  position: relative;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.timeline-item-content::before,
+.timeline-item-content::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  width: 180;
+  height: 180;
+  border-radius: 50%;
+
+}
+
+.timeline-item-content::before {
+  top: -95;
+  right: -95;
+  background-color: #03373a;
+}
+
+.timeline-item-content::after {
+  top: -125;
+  right: -55;
+  background-color: #25bdab;
+}
+
+.timeline-item-content-disable {
+    opacity: 0.5; /* Añadido para dar una apariencia de deshabilitado */
+  }
+.timeline-item-content-next {
+    box-shadow: 0 2px 4px rgba(3, 139, 157, 0.1);
+    border: 1px solid rgb(5, 103, 78);
+}
+.timeline-item-content:hover {
+    /* ... */
+    transform: translateY(-5px);
+  }
+.timeline-item-left .timeline-item-content,
+.timeline-item-right .timeline-item-content {
+  width: 30vh;
+}
+
+.timeline-item-left .timeline-item-content {
+  left: 60%;
+}
+
+.timeline-item-right .timeline-item-content {
+  left: 20%;
+}
+
+.timeline-item-content h3 {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.timeline-item-content p {
+  color: #4a4a4a;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.timeline-item-content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Personaliza los colores y estilos aquí */
+.timeline-item:nth-child(odd) .timeline-item-content {
+  background-color: #FFF;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
+    background-color: #fbdeb7;
+}
