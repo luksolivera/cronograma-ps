@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'cronograma-ps',
+  base: '/cronograma-ps/',
   plugins: [react()],
   optimizeDeps: {
     include: ['@mui/material/styles']
