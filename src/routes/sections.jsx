@@ -18,6 +18,10 @@ export default function Router() {
       ),
       children: [
         { element: <Cronograma />, index: true },
+        { element: <Cronograma />, path: '/' },
+        { element: <Cronograma />, path: 'cronograma' },
+
+
       ],
     },
     {
