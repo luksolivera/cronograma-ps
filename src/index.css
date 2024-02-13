@@ -1,0 +1,161 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #00aef0;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+@-moz-document url-prefix() {
+  .dx-scheduler-work-space-month .dx-scheduler-date-table-cell {
+    position: relative;
+  }
+
+  .dx-scheduler-work-space-month .dx-scheduler-date-table-cell .disable-date {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.disable-date,
+.dinner {
+  height: 100%;
+  width: 100%;
+}
+
+.disable-date {
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(241, 25, 9, 0.1),
+      rgba(244, 67, 54, 0.1) 4px,
+      transparent 4px,
+      transparent 9px
+    );
+  color: #d00913;
+}
+
+.outside-month {
+  background-image:
+  repeating-linear-gradient(
+    135deg,
+    rgba(241, 25, 9, 0.1),
+    rgba(244, 67, 54, 0.1) 4px,
+    transparent 4px,
+    transparent 9px
+  );
+color: #d00913;
+}
+
+.dx-scheduler-header-panel-cell .disable-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dx-theme-fluent .dx-scheduler-header-panel-cell .disable-date,
+.dx-theme-material .dx-scheduler-header-panel-cell .disable-date {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: initial;
+}
+
+.dinner {
+  background: rgba(255, 193, 7, 0.2);
+}
+
+.dx-scheduler-time-panel-cell .dinner {
+  color: rgba(255, 193, 7);
+  font-weight: 400;
+  background: transparent;
+}
+
+.dx-draggable {
+  cursor: auto;
+}
+
+td.dx-scheduler-time-panel-cell .dinner .cafe {
+  height: 200%;
+  width: 100%;
+  left: 50%;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.9 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position-y: 50%;
+  -webkit-mask-position-x: 100%;
+  margin-top: -4px;
+  background-color: #ffc107;
+}
+
+.dx-scheduler-date-table-cell {
+  padding: 0;
+  opacity: 1;
+}
+
+@media all and (-ms-high-contrast: none) {
+  td.dx-scheduler-time-panel-cell .dinner .cafe {
+    background-color: transparent;
+  }
+}
