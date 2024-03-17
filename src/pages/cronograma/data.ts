@@ -2,10 +2,20 @@ import { SchedulerTypes } from 'devextreme-react/scheduler';
 
 export const data: SchedulerTypes.Appointment[] = [
   {
-    text: 'Clase sincrónica',
-    description: "Se dictará la clase sincrónica por el siguiente enlace: https://meet.google.com/xxx-xxx-xxx",
+    text: 'Clase Presencial',
     startDate: new Date('2024-03-18T21:30:00.000Z'),
     endDate: new Date('2024-03-19T00:00:00.000Z'),
+  },
+  {
+    text: 'Clase Presencial',
+    startDate: new Date('2024-03-25T21:30:00.000Z'),
+    endDate: new Date('2024-03-26T00:00:00.000Z'),
+  },
+  {
+    text: 'Clase sincrónica',
+    description: "Se dictará la clase sincrónica por el siguiente enlace: https://meet.google.com/hff-ysuy-hky",
+    startDate: new Date('2024-04-01T21:30:00.000Z'),
+    endDate: new Date('2024-04-02T00:00:00.000Z'),
     recurrenceRule: "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO;UNTIL=20240706T000000Z", // https://icalendar.org/rrule-tool.html
   },
   {
