@@ -12,14 +12,14 @@ export const data: SchedulerTypes.Appointment[] = [
     endDate: new Date('2024-03-26T00:00:00.000Z'),
   },
   {
-    text: 'Clase sincrónica',
+    text: 'Clase virtual sincrónica',
     description: "Se dictará la clase sincrónica por el siguiente enlace: https://meet.google.com/hff-ysuy-hky",
     startDate: new Date('2024-04-01T21:30:00.000Z'),
     endDate: new Date('2024-04-02T00:00:00.000Z'),
     recurrenceRule: "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO;UNTIL=20240706T000000Z", // https://icalendar.org/rrule-tool.html
   },
   {
-    text: 'Clase asincrónica',
+    text: 'Clase virtual asincrónica',
     description: "Se debe enviar el estado de avance del proyecto de la materia",
     startDate: new Date('2024-03-18T21:30:00.000Z'),
     endDate: new Date('2024-03-19T00:00:00.000Z'),
