@@ -65,13 +65,13 @@ export const data: SchedulerTypes.Appointment[] = [
   },
   {
     text: 'Fecha limite Practica GIT',
-    startDate: new Date('2024-04-29T02:30:00.000Z'),
-    endDate: new Date('2024-04-29T03:00:00.000Z'),
+    startDate: new Date('2024-03-29T02:30:00.000Z'),
+    endDate: new Date('2024-03-29T03:00:00.000Z'),
   },
   {
     text: 'Fecha limite alcance proyecto integrador',
-    startDate: new Date('2024-05-05T02:30:00.000Z'),
-    endDate: new Date('2024-05-05T03:00:00.000Z'),
+    startDate: new Date('2024-04-05T02:30:00.000Z'),
+    endDate: new Date('2024-04-05T03:00:00.000Z'),
   },
   {
     text: 'Fecha limite informe proyecto integrador',
