@@ -17,10 +17,7 @@ export default function Router() {
         </DashboardLayout>
       ),
       children: [
-        { element: <Cronograma />, index: true },
-        { element: <Cronograma />, path: '/' },
-        { element: <Cronograma />, path: 'cronograma' },
-
+        { element: <Cronograma />, index: true,  path: '/' },
 
       ],
     },

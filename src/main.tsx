@@ -7,7 +7,7 @@ import App from './App.tsx';
 import './index.css';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <HelmetProvider>
-    <BrowserRouter>
+    <BrowserRouter basename='/cronograma-ps/'>
       <Suspense>
         <App />
       </Suspense>

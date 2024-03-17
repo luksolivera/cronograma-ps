@@ -1,8 +1,9 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 import Logo from '../../components/logo';
-
+import illustration404 from '/assets/illustrations/illustration_404.svg';
 
 
 
@@ -54,15 +55,15 @@ export default function NotFoundView() {
 
           <Box
             component="img"
-            src="/assets/illustrations/illustration_404.svg"
+            src={illustration404}
             sx={{
               mx: 'auto',
               height: 260,
               my: { xs: 5, sm: 10 },
             }}
           />
-
         </Box>
+        <Link to="/">Go back to Home</Link>
       </Container>
     </>
   );
