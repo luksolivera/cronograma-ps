@@ -16,6 +16,8 @@ export const data: SchedulerTypes.Appointment[] = [
   {
     text: 'Clase virtual asincrónica',
     description: "Se debe enviar el estado de avance del proyecto de la materia",
+    startDate: new Date('2024-08-22T21:00:00.000Z'),
+    endDate: new Date('2024-08-22T23:59:59.000Z'),
     allDay: true,
     recurrenceRule: "FREQ=WEEKLY;INTERVAL=1;BYDAY=TH;UNTIL=20241130T000000Z",
   },
