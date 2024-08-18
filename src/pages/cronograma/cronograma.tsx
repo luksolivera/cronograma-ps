@@ -75,7 +75,7 @@ const Cronograma = () => {
   currentView={currentView}
   onCurrentViewChange={onCurrentViewChange}
   height={730}
-  showAllDayPanel={false}
+  showAllDayPanel={true}
   firstDayOfWeek={0}
   startDayHour={12}
   cellDuration={60}
